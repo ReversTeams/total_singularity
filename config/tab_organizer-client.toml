@@ -1,0 +1,24 @@
+[menu]
+	#Show the Tab Organizer button in the creative inventory
+	show_creative_menu_button = true
+	#Show the Tab Organizer button in the survival inventory
+	show_survival_menu_button = true
+	#Show the config button in the Tab Organizer screen
+	show_organizer_config_button = true
+
+[jei]
+	#Replace JEI's flat ingredient list with CTO's creative-tab browser.
+	#Disabling this option restores JEI's normal ingredient list.
+	#The CTL integration options require this browser.
+	enable_jei_tab_browser = true
+	#Preserve CTO's empty layout slots in the JEI tab browser.
+	show_gaps_in_jei = true
+	#Enable Creative Tab Layouts integration in JEI.
+	#Disabling this option also disables CTL layouts and subtabs in JEI.
+	enable_ctl_in_jei = true
+	#Render CTL pages, sections, headers and banners inside JEI.
+	#CTL remains authoritative over tabs controlled by its plugins.
+	enable_ctl_layouts_in_jei = true
+	#Show CTL's grouped subtab panel inside JEI.
+	#This option cannot enable subtabs when CTL's own subtab system is disabled.
+	show_ctl_subtabs_in_jei = true

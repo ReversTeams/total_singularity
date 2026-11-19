@@ -1,0 +1,16 @@
+[
+  {
+    "id": "griefers",
+    "mobs": [
+      "minecraft:zombie",
+      "minecraft:skeleton",
+      "minecraft:creeper"
+    ],
+    "targets": [
+      "minecraft:furnace, 1.0, 1.0",
+      "minecraft:crafting_table, 1.0, 1.0"
+    ],
+    "breakPath": true,
+    "dropLoot": false
+  }
+]

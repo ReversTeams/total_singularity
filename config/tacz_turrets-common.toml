@@ -1,0 +1,18 @@
+#All turrets use the modern turret's stats and recipe, so turret types only change the look.
+identicalTurrets = false
+
+[modern]
+	#Whether this turret can be crafted, placed and spawn as a sentry turret.
+	enabled = true
+
+[industrial]
+	#Whether this turret can be crafted, placed and spawn as a sentry turret.
+	enabled = true
+
+[scrap]
+	#Whether this turret can be crafted, placed and spawn as a sentry turret.
+	enabled = true
+
+[tactical]
+	#Whether this turret can be crafted, placed and spawn as a sentry turret.
+	enabled = true
