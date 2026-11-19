@@ -72,6 +72,8 @@ generated_datapacks
 /dynamic-data-pack-cache
 /config/solaris/mapdata
 /config/solaris/waypoints
+/phantasia/seen_worlds
+/cache
 
 # explicitly included config
 !config/ProjectE/client.toml

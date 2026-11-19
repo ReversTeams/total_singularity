@@ -1,0 +1,30 @@
+{
+  "ddd660aa-a0a4-4273-b1e9-1799ac99308f": {
+    "name": "Mitemi",
+    "teamId": "",
+    "teamName": "",
+    "playtime": 0,
+    "kills": 0,
+    "deaths": 0,
+    "mined": 0,
+    "distance": 261,
+    "animalsBred": 0,
+    "fishCaught": 0,
+    "itemsEnchanted": 0,
+    "raidWins": 0,
+    "jumps": 9,
+    "questsCompleted": 0,
+    "basePlaytime": 0,
+    "baseKills": 0,
+    "baseDeaths": 0,
+    "baseMined": 0,
+    "baseDistance": 0,
+    "baseAnimalsBred": 0,
+    "baseFishCaught": 0,
+    "baseItemsEnchanted": 0,
+    "baseRaidWins": 0,
+    "baseJumps": 0,
+    "baseQuestsCompleted": 0,
+    "crowns": 0
+  }
+}

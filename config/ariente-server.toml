@@ -1,0 +1,122 @@
+#Damage settings
+[damage]
+	#Amount of damage the forcefield does when an entity touches it
+	# Default: 19.0
+	# Range: 0.0 ~ 1000.0
+	forcefieldDamage = 19.0
+
+#Power settings
+[power]
+	#The amount of power to consume per forcefield panel while it is building up
+	# Default: 500
+	# Range: 0 ~ 1000000000
+	forcefieldBuildupPower = 500
+	#The amount of each Ariente flux consumed per powered smelting tick
+	# Default: 200
+	# Range: 1 ~ 1000000000
+	smelterPowerPerTick = 200
+	#Furnace recipe ticks processed per powered smelting tick (1 = vanilla speed)
+	# Default: 10
+	# Range: 1 ~ 200
+	smelterSpeed = 10
+	#Powered ticks to traverse each purifier tube; lower values process faster (80 ticks = 4 seconds)
+	# Default: 80
+	# Range: 1 ~ 1000000
+	purifierTicksPerTube = 80
+	#Amount of EACH flux consumed per active tick for EACH tube in the purifier line
+	# Default: 400
+	# Range: 1 ~ 1000000000
+	purifierPowerPerTube = 400
+	#Maximum number of straight horizontal tubes between purifier endpoints
+	# Default: 4
+	# Range: 1 ~ 16
+	purifierMaxTubes = 4
+	#Raw metals recovered per ore with one purifier tube
+	# Default: 2
+	# Range: 1 ~ 64
+	purifierBaseYield = 2
+	#Additional raw metals recovered for each extra purifier tube; final yield is capped at 64
+	# Default: 1
+	# Range: 0 ~ 63
+	purifierExtraYieldPerTube = 1
+	#Preferred mod namespaces for automatic raw-metal outputs, in priority order.
+	#Other providers are ordered by registry ID. Explicit purifying recipes override automatic selection.
+	purifierPreferredOutputMods = ["minecraft", "ariente"]
+
+#Utility settings
+[utility]
+	#The maximum height of a door
+	# Default: 6
+	# Range: 1 ~ 50
+	maxDoorHeight = 6
+	#The maximum supported power of a power armor suit piece
+	# Default: 100
+	# Range: 1 ~ 100000
+	powersuitMaxPower = 100
+	#The maximum supported power of a power armor suit piece with the energy module installed
+	# Default: 130
+	# Range: 1 ~ 100000
+	powersuitMaxPowerOptimized = 130
+	#Given a power consumption of 1, this represents the ticks supplied by one negarite/posirite fuel pair from the shared Energy Holder
+	# Default: 30000
+	# Range: 1 ~ 10000000
+	powersuitTicks = 30000
+	#Given a power consumption of 1, this represents the ticks supplied by one negarite/posirite fuel pair from the shared Energy Holder (with energy module installed)
+	# Default: 40000
+	# Range: 1 ~ 10000000
+	powersuitTicksOptimized = 40000
+	#The automation field will gather power in an internal capacitor to be able to do a single operation. This represents the amount of accumulated power needed for this operation
+	# Default: 100
+	# Range: > 1
+	autoFieldPowerPerOperation = 100
+	#When transfering stacks with more than 1 item, the size of the stack will be multiplied with this factor and that cost will be added to the 'per operation' cost for transfering the stack
+	# Default: 2.0
+	# Range: 0.0 ~ 1.0E9
+	autoFieldFactorPerCombinedStack = 2.0
+	#This is the maximum amount of power the automation field will accumulate in a tick. Limiting this will basically set a limit to the amount of operations per tick that can be handled
+	# Default: 400
+	# Range: > 1
+	autoFieldAccumulatePerTick = 400
+	#This is the maximum amount of power the automation field can accumulate
+	# Default: 3200
+	# Range: > 1
+	autoFieldMaxAccumulatedPower = 3200
+	#Amount of charges needed before the warper can work (from overworld to Ariente)
+	# Default: 10
+	# Range: > 0
+	maxWarperCharges = 10
+
+#World generation settings
+[worldgen]
+	#Enable overworld oregen: 'yes', 'no', or 'default' (only when Ariente World is not installed)
+	#Allowed Values: DEFAULT, YES, NO
+	overworldOregen = "DEFAULT"
+	#Enable overworld dungeon loot: 'yes', 'no', or 'default' (only when Ariente World is not installed)
+	#Allowed Values: DEFAULT, YES, NO
+	overworldDungeonLoot = "DEFAULT"
+	#For overworld loot: weight for blueprints (use 0 to disable)
+	# Default: 20
+	# Range: > 0
+	overworldLootBlueprints = 20
+	#For overworld loot: weight for blueprint results (use 0 to disable)
+	# Default: 0
+	# Range: > 0
+	overworldLootBlueprintResults = 0
+	#For overworld loot: weight for powersuit pieces (use 0 to disable)
+	# Default: 0
+	# Range: > 0
+	overworldLootSuit = 0
+	#Without Ariente World: multiply the blueprint weight by this amount (default 20 gives an 80% chance with the default other weights)
+	# Default: 20
+	# Range: 1 ~ 1000
+	standaloneBlueprintMultiplier = 20
+	#Without Ariente World: blueprints per chest reward, including one core-machine pattern
+	# Default: 5
+	# Range: 1 ~ 16
+	standaloneBlueprintCount = 5
+
+#Constructor recipe settings
+[recipes]
+	#Extreme Circuit recipe and blueprint: 'yes', 'no', or 'default' (only without Ariente World)
+	#Allowed Values: DEFAULT, YES, NO
+	extremeCircuitRecipe = "DEFAULT"

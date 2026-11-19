@@ -3257,6 +3257,49 @@
           }
         }
       }
+    },
+    {
+      "id": "tacz_dmr",
+      "name": "Dmr",
+      "icon": "",
+      "source": "INTEGRATION",
+      "enabled": true,
+      "kind": "NONE",
+      "match": "tacz:dmr",
+      "mergesInto": "",
+      "alwaysInOffHand": false,
+      "items": [],
+      "entries": {
+        "count": 2,
+        "entries": {
+          "1": {
+            "visible": true,
+            "alignment": "TORSO",
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 0.0,
+            "scale": 90.0,
+            "thickness": 100.0,
+            "mergesInto": ""
+          },
+          "2": {
+            "visible": true,
+            "alignment": "TORSO",
+            "posX": 0.0,
+            "posY": 0.0,
+            "posZ": 0.0,
+            "rotX": 0.0,
+            "rotY": 0.0,
+            "rotZ": 0.0,
+            "scale": 90.0,
+            "thickness": 100.0,
+            "mergesInto": ""
+          }
+        }
+      }
     }
   ],
   "customItems": {

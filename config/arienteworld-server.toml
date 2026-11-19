@@ -1,0 +1,51 @@
+#AI settings
+[ai]
+	#The amount of ticks (times 10) that the city will stay on alert after spotting a player. So 120 would be one minute
+	# Default: 400
+	# Range: 1 ~ 100000000
+	alertTime = 400
+	#Larger surface and floating bases occasionally launch soldier-piloted scout ships.
+	#This is separate from natural mob spawning and does not run in Peaceful mode.
+	scoutPatrols = true
+	#Minimum seconds between scout launch opportunities at each base.
+	#Repeat delays vary between this value and twice this value. First encounters are prepared within seconds.
+	#Launches require distant players, clear space and room in the two-scout limit.
+	# Default: 10
+	# Range: 5 ~ 7200
+	scoutLaunchIntervalSeconds = 10
+
+#World generation settings
+[worldgen]
+	#The chance that each seeded city grid spot has a dungeon complex (0 disables complexes, 1 enables every candidate).
+	#Huge cube complexes additionally keep only half of their candidate sites.
+	#Landscape city districts, stations, intercity routes and arrival portals are independent.
+	#Applies to newly generated worlds; change before creating the world.
+	# Default: 0.7
+	# Range: 0.0 ~ 1.0
+	cityDungeonChance = 0.7
+	#The chance that a chunk in the overworld will have an Ariente dungeon
+	# Default: 0.002
+	# Range: 0.0 ~ 1.0
+	overworldDungeonChance = 0.002
+
+#Loot settings
+[loot]
+	#The chance that a killed soldier will drop a keycard
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	soldierCitykeyChance = 0.2
+	#Multiplier for natural soldier and Master Soldier Sabre/Lance equipment drops, including Looting.
+	#Does not affect combat equipment, armor, keycards or guaranteed equipment drops.
+	#0.05 makes finished weapons twenty times rarer than vanilla equipment drops.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	soldierWeaponDropMultiplier = 0.05
+
+#Natural mob spawning settings
+[spawning]
+	#Maximum living Darkbats within 128 horizontal blocks of each nearby non-spectator player, at any height.
+	#Natural spawning stops when any nearby player reaches this limit. Set to 0 to disable natural Darkbat spawning.
+	#Existing Darkbats are not removed; summoned and spawner mobs count toward the limit but can still be created.
+	# Default: 3
+	# Range: 0 ~ 64
+	darkbatMaxPerPlayer = 3
